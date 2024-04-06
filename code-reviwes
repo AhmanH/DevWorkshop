@@ -1,0 +1,100 @@
+1.) Microsoft and Yelp both insist that shared knowledge of the control base is the most
+control. Microsoft especially ensures that the opinion of every team member shall be valued
+and during code reviews is no exception. Both companies also preach maintability through different methods.
+Microsoft talks about making small pull requests, merges, and overall code reviews to keep them easy
+to digest and maitain. Yelp in their strict code of conduct mentions that "code must be maintainable".
+The differences are also clear, Microsoft is big on watching the tone and respect of a code review. Microsoft
+doesn't want anybody to feel put down by code reviews. While Yelp doesn't really mention this, they're focused
+on making the most productive code review, hurt feelings or not. Unlike Microsoft, Yelp is also very big on time,
+they want code reviews to be completed and sent back within the first 24 hours.
+
+2.) Description:
+This code review focuses on the implementation of user authentication for our new web application.
+
+Changes Proposed:
+
+Added user authentication functionality using JWT (JSON Web Tokens).
+Implemented registration, login, and logout endpoints.
+Added middleware to protect routes that require authentication.
+Review Comments:
+
+Code Structure and Organization:
+
+Positive: The overall structure of the authentication module is well-organized and easy to follow.
+Suggestion: Consider splitting the authentication logic into separate modules (e.g., registration, login) for better maintainability.
+Security:
+
+Positive: Good job implementing JWT-based authentication for improved security.
+Suggestion: Ensure that sensitive information such as passwords are securely hashed before storing in the database.
+Error Handling:
+
+Positive: Error handling is implemented for most scenarios, providing informative responses.
+Suggestion: Add error handling for cases such as invalid input during registration or login to provide a better user experience.
+Documentation:
+
+Positive: Inline comments are clear and informative, helping to understand the code's functionality.
+Suggestion: Consider adding high-level documentation explaining the authentication flow and usage of endpoints for future developers.
+Testing:
+
+Positive: Unit tests are provided for critical functions, ensuring code reliability.
+Suggestion: Expand test coverage to include edge cases and scenarios with different input data to improve robustness.
+Code Style and Naming Conventions:
+
+Positive: Code follows consistent naming conventions and adheres to our coding standards.
+Suggestion: Double-check variable names in some places for clarity and consistency with the project's naming conventions.
+Conclusion:
+Overall, the implementation of user authentication meets our requirements and demonstrates good practices in security and code organization. The suggested improvements will enhance maintainability, error handling, and user experience. Once the suggestions are addressed, this code can be merged into the main branch.
+
+This code review follows Microsoft's guidelines for code reviews while remaining positive and also providing suggestions to improve.
+Code reviews like this give the developer a good idea of what they need to improve on, while also giving them an idea of what
+they already have figured out.
+
+3.) 
+Code Review: User Authentication Implementation
+
+Author: John Doe
+
+Reviewer: Jane Smith
+
+Date: April 5, 2024
+
+Description:
+This code review addresses the recent changes made for implementing user authentication in our web application.
+
+Changes Proposed:
+
+Added authentication functionality using JWT (JSON Web Tokens).
+Created registration, login, and logout endpoints.
+Implemented middleware to secure routes requiring authentication.
+Review Comments:
+
+Overall Impression:
+
+"Looks fine to me."
+Code Structure and Organization:
+
+"Seems okay."
+Security:
+
+"Should be secure enough."
+Error Handling:
+
+"Handled errors where necessary."
+Documentation:
+
+"Comments are there."
+Testing:
+
+"Unit tests are provided."
+Code Style and Naming Conventions:
+
+"Looks good."
+Conclusion:
+The code changes seem to meet the requirements. No major issues were found.
+
+
+This code review is terrible since it gives very vague advice without providing
+any real substance or feedback. Even though it's positive, the developer
+will have no idea if they've met the project specifications from this code review
+whatsoever.
+
